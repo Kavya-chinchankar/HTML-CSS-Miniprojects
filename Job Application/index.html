@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Application Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="apply_box">
+            <h1 class="form_type" id="job">Job Application <span class="small">(web)</span></h1>
+            <div class="content">
+                 <div>First Name <input type="text" name="fname" placeholder="Enter First Name" id="fname"></div>
+                 <div>Last Name <input type="text" name="lname" placeholder="Enter Last Name" id="lname"></div>
+                 <div>Email <input type="email" name="email" id="email"  placeholder="abc12@gmail.com"></div>
+                 <div>Job Role <select name="job_role" id="job_role" >
+                    <option value="">Select Job Role</option>
+                    <option value="full_stack_developer">Full Stack Developer</option>
+                    <option value="front_end_developer">Front end Developer</option>
+                    <option value="back_end_developer">Back end Developer</option>
+                     </select></div>
+                 <div class="text_area">Address <textarea name="address" id="" cols="30" rows="4" placeholder="Enter your Address"></textarea></div>
+                 <div>City <input type="text" name="city" id="city" placeholder="Enter City Name"></div>
+                 <div>Pincode <input type="text" name="pincode" id="pincode" placeholder="Enter Pincode Number"></div>
+                 <div>Start Date <input type="date" name="start_date" id="start_date" ></div>
+                 <div> Upload Your CV <input type="file" name="cv" id="cv" ></div>
+            </div>
+            <div class="button"><input type="submit" value="Apply Now" id="submit"></div> 
+        </div>
+    </div> 
+</body>
+</html>
