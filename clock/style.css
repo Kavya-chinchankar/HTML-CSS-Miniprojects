@@ -1,0 +1,65 @@
+.clock {
+    border-radius: 50%;
+    background:url(pic/clk.png) no-repeat center;
+    background-size: 90%;
+    height: 20em;
+    padding-bottom: 10%;
+    position: relative;
+    width: 20em; 
+  }
+
+  .minutes-hand, .hours-hand, .seconds-hand {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+  }
+
+  .hours {
+    background: black;
+    height: 10%;
+    left: 48.75%;
+    position: absolute;
+    top: 38%;
+    transform-origin: 50% 100%;
+    width: 2.2%;
+  }
+
+  .minutes {
+    background: black;
+    height: 20%;
+    left: 49%;
+    position: absolute;
+    top: 28%;
+    transform-origin: 50% 100%;
+    width: 1.5%;
+    z-index: 3;
+  }
+
+  .seconds {
+    background: black;
+    height: 30%;
+    left: 49.5%;
+    position: absolute;
+    top: 22%;
+    transform-origin: 50% 100%;
+    width: 1%;
+    z-index: 8;
+  }
+
+  .hours-hand {
+    animation: rotate 43200s infinite linear;
+  }
+  .minutes-hand {
+    animation: rotate 3600s infinite linear;
+  }
+  .seconds-hand {
+    animation: rotate 60s infinite linear;
+  }
+
+  @keyframes rotate {
+    100% {
+      transform: rotateZ(360deg);
+    }
+  }
